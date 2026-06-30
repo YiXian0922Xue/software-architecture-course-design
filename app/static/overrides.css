@@ -1,0 +1,40 @@
+/* Roomier writing area and generation controls. Loaded after the base theme. */
+.conversation{
+  padding-left:max(24px,calc((100% - 1080px)/2));
+  padding-right:max(24px,calc((100% - 1080px)/2));
+}
+.composer-wrap{
+  padding-left:max(24px,calc((100% - 1080px)/2));
+  padding-right:max(24px,calc((100% - 1080px)/2));
+}
+.composer{padding:13px 13px 13px 18px}
+.composer textarea{min-height:66px;max-height:220px;font-size:15px;line-height:1.65}
+.generate-card{width:min(700px,94vw);max-height:88vh;overflow-y:auto;overflow-x:hidden}
+.generate-image-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.generate-image-item{display:grid;grid-template-columns:34px minmax(0,1fr);gap:9px;border:1px solid var(--line);border-radius:10px;padding:9px;background:#fafcfa}
+.generate-image-item b,.generate-image-item small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.generate-image-item b{font-size:11px}.generate-image-item small,.empty-note{font-size:10px;color:var(--muted)}
+.generate-image-item span{width:34px;height:34px;border-radius:8px;background:var(--soft);display:grid;place-items:center;color:var(--green);font-size:10px;font-weight:700}
+.advanced-prompt{margin:15px 0;border:1px solid var(--line);border-radius:11px;padding:11px 13px;background:#fbfcfb}
+.advanced-prompt summary{cursor:pointer;color:var(--green);font-size:12px;font-weight:700}
+.advanced-prompt label{display:block;font-size:12px;font-weight:650;margin:12px 0 7px}
+.advanced-prompt textarea{width:100%;min-height:90px;border:1px solid #d8dfda;border-radius:10px;padding:11px;resize:vertical}
+.advanced-prompt small{display:block;color:var(--muted);font-size:10px;line-height:1.5}
+.generation-progress{margin:14px 0;border:1px solid #b9d0c2;background:#f1f7f2;border-radius:12px;padding:12px 14px}
+.progress-head{display:flex;align-items:center;gap:9px;color:var(--green);font-size:12px}
+.progress-head time{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums}
+.generation-progress p{margin:7px 0 4px;font-size:12px;line-height:1.5}
+.generation-progress small{color:var(--muted);font-size:10px}
+.progress-spinner{width:13px;height:13px;border:2px solid #bdd1c4;border-top-color:var(--green);border-radius:50%;animation:progress-spin .8s linear infinite}
+@keyframes progress-spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.generate-image-list{grid-template-columns:1fr}.composer textarea{min-height:54px}}
+@media(max-width:600px){
+  .app-shell,.app-shell:has(.inspector:not(.hidden)){grid-template-columns:76px minmax(0,1fr)}
+  .app-shell:has(.workspace:not(.hidden)){grid-template-columns:minmax(0,1fr)}
+  .app-shell:has(.workspace:not(.hidden)) .sidebar{display:none}
+  .composer-wrap{left:0!important;right:0!important;padding-left:14px;padding-right:14px}
+  .conversation{padding-left:16px;padding-right:16px}
+  .topbar{height:72px;padding:0 14px}
+  .topbar h1{font-size:18px;max-width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .composer textarea{min-height:72px}
+}

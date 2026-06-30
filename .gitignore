@@ -1,0 +1,16 @@
+.env
+.tools/
+.conda/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+data/*.db
+data/uploads/
+data/outputs/
+data/server.pid
+data/server.*.log
+!data/.gitkeep
+.idea/
+.vscode/

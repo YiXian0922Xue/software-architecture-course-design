@@ -1,0 +1,2 @@
+"""LabScribe Agent application package."""
+

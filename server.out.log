@@ -1,0 +1,4 @@
+INFO:     127.0.0.1:52448 - "POST /api/projects/5ebc3b192c464220a59fa7019f46ac06/reports HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56780 - "GET /api/reports/28e25000761b4e90a121e65d70e63ed7/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55060 - "POST /api/projects/5ebc3b192c464220a59fa7019f46ac06/resources?kind=material HTTP/1.1" 201 Created
+INFO:     127.0.0.1:61723 - "POST /api/projects/5ebc3b192c464220a59fa7019f46ac06/resources?kind=material HTTP/1.1" 201 Created
