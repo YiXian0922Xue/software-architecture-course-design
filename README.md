@@ -60,4 +60,4 @@ Get-Content .\data\server.out.log -Wait
 - `POST /api/projects/{id}/reports`：兼容用的同步生成接口。
 - `GET /api/reports/{id}/download`：下载生成物。
 
-更完整的需求、模式论证和 4+1 视图见课程作业报告。
+更完整的需求、模式论证和 4+1 视图见[体系结构文档](/docs/体系结构文档.pdf)。
